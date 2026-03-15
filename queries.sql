@@ -12,3 +12,20 @@ SELECT Title, ProductionCompany, Locations, ReleaseYear FROM FilmLocations WHERE
 
 SELECT COUNT(*) FROM FilmLocations;
 
+SELECT COUNT(Locations) FROM FilmLocations WHERE Writer="James Cameron";
+
+-- DISTINCT statement
+
+SELECT DISTINCT Title FROM FilmLocations;
+
+SELECT COUNT(DISTINCT ReleaseYear) FROM FilmLocations WHERE ProductionCompany="Warner Bros. Pictures";
+
+-- LIMIT statement
+
+SELECT * FROM FilmLocations LIMIT 25;
+
+SELECT * FROM FilmLocations LIMIT 15 OFFSET 10;
+
+
+
+
